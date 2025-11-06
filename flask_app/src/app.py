@@ -24,10 +24,6 @@ except Exception as e:
 db = client[db_name]
 coll = db["data"]
 
-@app.route('/test-form')
-def test_form():
-    return render_template('test_form.html')
-
 
 @app.route('/api/data', methods=['POST'])
 def api_insert_data():
